@@ -1,0 +1,24 @@
+<!-- <p>  create-user works!</p> -->
+<h1> Create User </h1>
+<form (ngSubmit) = "onSubmit()"> 
+  <!--ngSubmit is an event , onSubmit() is event handler . Event Handler is defined in component class. -->
+   <div class="form-group">
+   <label>Name</label>
+   <input type="text" 
+          [(ngModel)]="user.name"
+          id="name" 
+          name="name" >
+    </div>
+
+    <div class="form-group">
+   <label>Email</label>
+   <input type="text" 
+          [(ngModel)]="user.email"
+          id="email" 
+          name="email">
+    </div>
+
+    <button type="submit" class="btn btn-info">Submit </button>
+
+
+ </form> 
